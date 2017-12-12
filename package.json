@@ -1,0 +1,49 @@
+{
+  "name": "stance",
+  "version": "1.0.0",
+  "description": "Simple finite state machine for data managment Edit",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "webpack --env.NODE_ENV=production",
+    "update-dist": "git add dist",
+    "start": "webpack --env.NODE_ENV=development",
+    "test": "mocha-webpack --webpack-config webpack.config-test.js \"src/**/*.spec.js\"",
+    "test-watch": "npm run test -- --watch"
+  },
+  "pre-commit": [
+    "test",
+    "build",
+    "update-dist"
+  ],
+  "keywords": [
+    "stance",
+    "state"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Snowshield/Stance.git"
+  },
+  "author": "Nikita Borisenko <github.snowshield@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Snowshield/Stance/issues"
+  },
+  "homepage": "https://github.com/Snowshield/Stance#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "chai": "^3.5.0",
+    "chai-spies": "^0.7.1",
+    "eslint": "^4.12.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-import": "^2.8.0",
+    "mocha": "^3.5.3",
+    "mocha-webpack": "^0.7.0",
+    "pre-commit": "^1.2.2",
+    "webpack": "^3.10.0"
+  }
+}
