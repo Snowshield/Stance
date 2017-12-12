@@ -4,8 +4,8 @@ Update textarea height to its content with lines number customization.
 #### GitHub: [link](https://github.com/Snowshield/Stance)
 #### NPM: [link](https://www.npmjs.com/package/stance)
 
-
 #### Install via NPM
+
 ```
 npm install --save stance
 ```
