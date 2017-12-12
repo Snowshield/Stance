@@ -1,5 +1,5 @@
 # Stance
-Update textarea height to its content with lines number customization.
+Simple finite state machine for data managment.
 
 #### GitHub: [link](https://github.com/Snowshield/Stance)
 #### NPM: [link](https://www.npmjs.com/package/stance)
